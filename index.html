@@ -5,8 +5,9 @@
   <!-- displays site properly based on user's device-->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 8px; text-align: center; }
     .attribution a { color: hgsl(228, 45%, 44%); }
   </style>
 </head>
@@ -25,11 +26,11 @@
           <li class="frm-sec-desc__list-item">And much more!</li>
         </ul>
       </div>
-      <from class="frm-cnt"> 
+      <form class="frm-cnt" action="#" method="post">
         <label class="frm-cnt__lbl" for="inputEmail">Email address</label>
-        <input type="text" name="email" placeholder="email@company.com">
-        <button type="submit"> Subscribe to monthly newsletter</button>
-      </from>
+        <input class="frm-cnt__correo" id="inputEmail" type="email" name="email" placeholder="email@company.com" required>
+        <button class="frm-cnt__btn" id="btn" type="submit"> Subscribe to monthly newsletter</button>
+      </form>
     </div>
   </aside>
   <!--
@@ -41,8 +42,10 @@
   A confirmation email has been sent to ash@loremcompany.com.
   Please open it and click the button inside to confirm your subscription.
   Dismiss message
+  Success message end
   -->
-  <Success>message end</Success>
-  <div class="attribution"></div>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">YusbelSJ@</a>.
+  <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">YusbelSJ@</a>.
+  </div>
+  <script src="/script.js"> </script>
 </body>

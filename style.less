@@ -1,2 +1,129 @@
+@Tomato: hsl(4, 100%, 67%);
+@Dark-Slate-Grey: hsl(234, 29%, 20%);
+@Charcoal-Grey: hsl(235, 18%, 26%);
+@Grey: hsl(231, 7%, 60%);
+@White: hsl(0, 0%, 100%);
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@roboto:"Roboto";
+@robotoBold:"Roboto Bold";
 
+html{
+    font-family: @roboto;
 
+}
+*{
+    color: @Dark-Slate-Grey;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 20px;
+
+}
+
+body{
+    height: 100%;
+    .attribution {
+        font-size: 12px;
+    }
+}
+.as{
+    height: 100%;
+    .cnt-img {
+        img{
+            width: 100%;
+        }
+    }
+}
+.frm-sect{
+    padding: 30px;
+    .frm-sec-desc{
+        margin-bottom: 20px;
+
+        &__title{
+            font-family: @robotoBold;
+            font-size: 40px;
+            letter-spacing: 1px;
+            line-height: normal;
+        }
+        &__text{
+            font-family: @roboto;
+            font-size: 16px;
+            letter-spacing: 1px;
+
+            margin-top: 10px;
+        }
+        &__list{
+            
+            list-style:none;
+            padding-top: 10px;
+            
+            &-item{
+                font-family: @roboto;
+                font-size: 16px;
+
+                background:url('assets/images/icon-list.svg') no-repeat top left;
+                padding-left: 30px;
+                background-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+    .frm-cnt{
+        &__lbl{
+            font-family: @robotoBold;
+            font-size: 14px;
+        }
+        &__correo{
+            box-sizing: border-box;
+            width: 100%;
+            border-radius:10px;
+            border:1px solid @Dark-Slate-Grey ;
+            font-family: @roboto;
+            padding: 10px;
+            margin-bottom: 10px;
+            &:focus{
+                outline: none;
+                border: 2px solid @Charcoal-Grey;
+            }
+            
+        }
+        &__correo--invalid { 
+            border: 2px solid red;
+            &::after{
+                content: "valid email required";
+                color: #d37c7c;
+                position: relative;
+                left: 20px;
+            }
+        }
+        
+    }
+    
+        &__btn{
+            display:inline-block;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid @Charcoal-Grey;
+            color: @White;
+            background-color: @Charcoal-Grey;
+            &:active {
+                transform: scale(1.02);
+            }
+        }
+        &__correo--valid{
+            background:linear-gradient(90deg , #ff5476,#ea795a );
+
+    }
+}

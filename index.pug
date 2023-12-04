@@ -5,8 +5,9 @@ head
   // displays site properly based on user's device
   link(rel='icon' type='image/png' sizes='32x32' href='./assets/images/favicon-32x32.png')
   title Frontend Mentor | Newsletter sign-up form with success message
+  link(rel="stylesheet", href="style.css")
   style.
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 8px; text-align: center; }
     .attribution a { color: hgsl(228, 45%, 44%); }
 body 
     aside.asd  
@@ -21,10 +22,10 @@ body
                     li.frm-sec-desc__list-item Product discovery and building what matters
                     li.frm-sec-desc__list-item Measuring to ensure updates are a success
                     li.frm-sec-desc__list-item And much more!
-            from.frm-cnt 
+            form.frm-cnt(action="#" method="post")
                 label.frm-cnt__lbl(for="inputEmail") Email address
-                input(type="text" name="email" placeholder="email@company.com") 
-                button(type="submit" )  Subscribe to monthly newsletter
+                input.frm-cnt__correo#inputEmail(type="email" name="email" placeholder="email@company.com" required) 
+                button.frm-cnt__btn#btn(type="submit" )  Subscribe to monthly newsletter
     //
         Sign-up form start
         
@@ -34,11 +35,12 @@ body
         A confirmation email has been sent to ash@loremcompany.com.
         Please open it and click the button inside to confirm your subscription.
         Dismiss message
-    Success message end
+        Success message end
     .attribution
-    | Challenge by 
-    a(href='https://www.frontendmentor.io?ref=challenge' target='_blank') Frontend Mentor
-    | . 
-    |     Coded by 
-    a(href='#') YusbelSJ@
-    | .
+        | Challenge by 
+        a(href='https://www.frontendmentor.io?ref=challenge' target='_blank') Frontend Mentor
+        | . 
+        |     Coded by 
+        a(href='#') YusbelSJ@
+        | .
+    script(src="/script.js") 
