@@ -74,21 +74,26 @@ body .attribution {
   font-family: "Roboto";
   padding: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 .frm-sect .frm-cnt__correo:focus {
   outline: none;
   border: 2px solid hsl(235, 18%, 26%);
 }
 .frm-sect .frm-cnt__correo--invalid {
-  border: 2px solid red;
+  border: 2px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
 }
 .frm-sect .frm-cnt__correo--invalid::after {
-  content: "valid email required";
-  color: #d37c7c;
-  position: relative;
-  left: 20px;
+  content: 'valid email required';
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color: red;
+  position: static;
+  top: -20px;
+  right: 20px;
 }
-.frm-sect__btn {
+.frm-sect .frm-cnt__btn {
   display: inline-block;
   width: 100%;
   border-radius: 10px;
@@ -97,11 +102,12 @@ body .attribution {
   color: hsl(0, 0%, 100%);
   background-color: hsl(235, 18%, 26%);
 }
-.frm-sect__btn:active {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-.frm-sect__correo--valid {
+.frm-sect .frm-cnt__btn--valid {
   background: -webkit-gradient(linear, left top, right top, from(#ff5476), to(#ea795a));
   background: linear-gradient(90deg, #ff5476, #ea795a);
+  color: hsl(0, 0%, 100%);
+}
+.frm-sect .frm-cnt__btn:active {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
