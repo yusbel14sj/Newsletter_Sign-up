@@ -22,20 +22,10 @@ body
                     li.frm-sec-desc__list-item Product discovery and building what matters
                     li.frm-sec-desc__list-item Measuring to ensure updates are a success
                     li.frm-sec-desc__list-item And much more!
-            form.frm-cnt(action="#" method="post")
+            form.frm-cnt(action="cn" onsubmit="return redirection" method="post")
                 label.frm-cnt__lbl(for="inputEmail") Email address
                 input.frm-cnt__correo#inputEmail(type="email" name="email" placeholder="email@company.com" required) 
                 button.frm-cnt__btn#btn(type="submit" )  Subscribe to monthly newsletter
-    //
-        Sign-up form start
-        
-        Sign-up form end
-        Success message start
-        Thanks for subscribing!
-        A confirmation email has been sent to ash@loremcompany.com.
-        Please open it and click the button inside to confirm your subscription.
-        Dismiss message
-        Success message end
     .attribution
         | Challenge by 
         a(href='https://www.frontendmentor.io?ref=challenge' target='_blank') Frontend Mentor

@@ -65,6 +65,18 @@ body .attribution {
   font-family: "Roboto Bold";
   font-size: 14px;
 }
+.frm-sect .frm-cnt__lbl--invalid::after {
+  content: 'valid email required';
+  font-size: 12px;
+  font-family: "Roboto Bold";
+  color: hsl(4, 100%, 67%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
 .frm-sect .frm-cnt__correo {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -74,7 +86,6 @@ body .attribution {
   font-family: "Roboto";
   padding: 10px;
   margin-bottom: 10px;
-  position: relative;
 }
 .frm-sect .frm-cnt__correo:focus {
   outline: none;
@@ -83,15 +94,6 @@ body .attribution {
 .frm-sect .frm-cnt__correo--invalid {
   border: 2px solid hsl(4, 100%, 67%);
   color: hsl(4, 100%, 67%);
-}
-.frm-sect .frm-cnt__correo--invalid::after {
-  content: 'valid email required';
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
-  color: red;
-  position: static;
-  top: -20px;
-  right: 20px;
 }
 .frm-sect .frm-cnt__btn {
   display: inline-block;

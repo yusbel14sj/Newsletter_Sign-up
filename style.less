@@ -83,6 +83,15 @@ body{
         &__lbl{
             font-family: @robotoBold;
             font-size: 14px;
+            &--invalid::after {
+                content:'valid email required';
+                font-size:12px;
+                font-family: @robotoBold;
+                color:@Tomato;
+
+                display: flex;
+                justify-content: end;
+            }
         }
         &__correo{
             box-sizing:border-box;
@@ -92,23 +101,13 @@ body{
             font-family: @roboto;
             padding: 10px;
             margin-bottom: 10px;
-            position: relative;
             &:focus{
                 outline: none;
                 border: 2px solid @Charcoal-Grey;
             }
             &--invalid { 
                 border: 2px solid @Tomato;
-                color:@Tomato ;
-                &::after {
-                    content:'valid email required';
-                    font-family: 'Courier New', Courier, monospace;
-                    font-size: 40px;
-                    color: red;
-                    position:static;
-                    top:-20px;
-                    right: 20px;
-                }
+                color:@Tomato;
                 
             }
             
