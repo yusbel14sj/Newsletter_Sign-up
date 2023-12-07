@@ -20,5 +20,6 @@ inputEmail.addEventListener('change',()=> {
 })
 
 function redirection(){
-    window.location.href="/success.html"
+    window.location.href='/success.html';
+    return false
 }

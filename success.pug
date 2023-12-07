@@ -4,4 +4,14 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Success
+        link(rel="stylesheet", href="/style.css")
+        link(rel="stylesheet", href="/success.css")
     body 
+        article.art 
+            .cnt-dct
+                img.art__img(src="/assets/images/icon-success.svg", alt="check succest")
+                h1.art__title Thanks for subscribing!
+                p.art__text A confirmation email has been sent to 
+                    b   ash@loremcompany.com.
+                    |   Please open it and click the button inside to confirm your subscription.   
+            a.art__button(href="/index.html") Dismiss message. 
