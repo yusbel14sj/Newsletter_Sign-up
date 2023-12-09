@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/assets/images/Captura de pantalla 2023-12-08 203117.png)
+![imagen web](/design/Captura%20de%20pantalla%202023-12-08%20203117.png)
 
 ### Links
 
