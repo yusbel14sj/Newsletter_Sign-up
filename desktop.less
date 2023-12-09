@@ -1,0 +1,48 @@
+@import "style.less";
+
+
+body {
+    background:@Dark-Slate-Grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .asd {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+        min-width: 50%;
+        max-width: 600px;
+
+        background-color: @White;
+
+        border-radius: 15px;
+        padding: 15px;
+
+        .cnt-img{
+            width: 48%;
+            box-sizing: content-box;
+            & img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .frm-sect{
+            width: 48%;
+            padding: 0 30px;
+        }
+
+    } 
+
+}
+
+.attribution {
+    position:absolute;
+    bottom: -20px;
+    color: @White;
+}
+.attribution a{
+    color: @White;
+}
